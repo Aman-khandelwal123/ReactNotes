@@ -4,6 +4,11 @@ import banner from '../Image/Logo.png'
 
 const Login = () => {
     const navigate = useNavigate();
+    // const [value, setvalue] = useState({
+    //     "user": '',
+    //     "password": ''
+    // })
+
     const [value, setvalue] = useState({
         "user": '',
         "password": ''
@@ -20,7 +25,6 @@ const Login = () => {
         console.log(value)
         navigate("/home")
     }
-
 
     return (
         <>

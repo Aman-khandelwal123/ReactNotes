@@ -2,11 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import banner from '../Image/Logo.png'
 import Select from 'react-select'
+import Home from '../Pages/Home'
 const Header = () => {
     const notes = [
         { label: 'BCA', value: 'BCA' },
         { label: 'BBA', value: 'BBA' },
     ];
+
     return (
         <>
             <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
