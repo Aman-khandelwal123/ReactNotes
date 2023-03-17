@@ -1,10 +1,13 @@
 import React from 'react'
+import Footer from '../Inc/Footer'
+import Header from '../Inc/Header'
 
 const semester = () => {
     return (
         <>
+            <Header />
             <div className="container-notes">
-                <h1 className="heading">First Semester Notes</h1>
+                <h1 className="heading mt-5">First Semester Notes</h1>
                 <section className="notes">
                     <div className="box">
                         <h1>C Programming Notes</h1>
@@ -49,6 +52,7 @@ const semester = () => {
                     </div>
                 </section>
             </div>
+            <Footer />
         </>
     )
 }

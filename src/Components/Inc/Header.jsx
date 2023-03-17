@@ -7,6 +7,7 @@ const Header = () => {
     const notes = [
         { label: 'BCA', value: 'BCA' },
         { label: 'BBA', value: 'BBA' },
+        { label: 'MCA', value: 'MCA' },
     ];
 
     return (
@@ -31,7 +32,6 @@ const Header = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to='/'>Logout</Link>
                         </li>
-
                     </ul>
                     <form className="col-lg-3">
                         <Select

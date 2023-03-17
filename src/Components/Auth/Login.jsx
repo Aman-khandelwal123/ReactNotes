@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import banner from '../Image/Logo.png'
 
 const Login = () => {
+    const [passwordShown, setPasswordShown] = useState(false);
     const navigate = useNavigate();
     // const [value, setvalue] = useState({
     //     "user": '',
@@ -11,8 +12,9 @@ const Login = () => {
 
     const [value, setvalue] = useState({
         "user": '',
-        "password": ''
+        "password": '',
     })
+
 
     const handleCatch = (e) => {
         setvalue({
@@ -22,10 +24,14 @@ const Login = () => {
     }
 
     const loginUser = (e) => {
+        e.preventDefault();
         console.log(value)
         navigate("/home")
     }
-
+    // Show Password
+    const togglePassword = () => {
+        setPasswordShown(!passwordShown);
+    };
     return (
         <>
             <div>
@@ -45,7 +51,8 @@ const Login = () => {
                                 </div>
                                 <div className="form-group">
                                     <label>Password</label>
-                                    <input type="password" name='password' className="form-control" placeholder="Password" onChange={handleCatch} />
+                                    <i className={passwordShown ? "fa fa-eye" : "fa fa-eye-slash"} onClick={togglePassword} style={{ position: 'absolute', top: '62%', right: '10%' }}></i>
+                                    <input type={passwordShown ? "text" : "password"} name='password' className="form-control" placeholder="Password" onChange={handleCatch} />
                                 </div>
                                 <button type="submit" onClick={loginUser} className="btn btn-black">Login</button>
                                 {/* <button type="submit" className="btn btn-secondary">Register</button> */}

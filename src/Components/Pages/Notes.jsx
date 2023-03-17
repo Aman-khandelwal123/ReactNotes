@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Footer from '../Inc/Footer'
+import Header from '../Inc/Header'
 
 const Notes = () => {
     return (
         <>
+            <Header />
             <div className="container-notes">
-                <h1 className="heading">BCA Notes For All Semesters</h1>
+                <h1 className="heading ">BCA Notes For All Semesters</h1>
                 <section className="notes">
                     <Link to={'/Semester'}>
                         <div className="box">
@@ -45,8 +48,9 @@ const Notes = () => {
                     </a>
                 </section>
             </div>
-
+            <Footer />
         </>
+        
     )
 }
 

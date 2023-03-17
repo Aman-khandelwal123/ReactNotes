@@ -7,8 +7,6 @@ import Header from '../Inc/Header'
 
 
 const About = () => {
-
-
     const [myOptions, setMyOptions] = useState([])
     const getDataFromAPI = () => {
         console.log("Options Fetched from API")

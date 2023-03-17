@@ -8,6 +8,7 @@ import Semester from './Components/Pages/Semester';
 import Login from './Components/Auth/Login';
 import Header from './Components/Inc/Header';
 import Footer from './Components/Inc/Footer';
+import Editor from './Components/Pages/Editor';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/Contact" element={<Contact />} />
           <Route exact path="/Notes" element={<Notes />} />
           <Route exact path="/Semester" element={<Semester />} />
+          <Route exact path="/Editor" element={<Editor />} />
         </Routes>
       </BrowserRouter>
     </>

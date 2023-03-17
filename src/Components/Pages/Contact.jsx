@@ -1,11 +1,16 @@
 import React from 'react'
 import Footer from '../Inc/Footer'
 import Header from '../Inc/Header'
-
+import { Editor } from 'primereact/editor';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+import { Button } from 'antd';
 const Contact = () => {
     return (
         <>
-        <Header />
+            <Header />
+            
             <div className="container">
                 <section className="contact-us mt-5">
                     <div className="left-side">
@@ -40,16 +45,23 @@ const Contact = () => {
                             <div className="input-box message-box">
                                 <textarea id="message" placeholder="Write a message here" required defaultValue={""} />
                             </div>
-                            <div className="button">
+                            {/* <div className="button">
                                 <input type="submit" defaultValue="Send Now" />
-                            </div>
-                            <div className="button">
+                            </div> */}
+                            <Button type="primary">Send Now</Button>
+                            <Button type="primary" className='ml-2'>Reset</Button>
+
+                            {/* <div className="button">
                                 <input type="reset" defaultValue="Reset" />
-                            </div>
+                            </div> */}
                         </form>
                     </div>
                 </section>
             </div>
+            <div className="col-12" style={{ margin: 'auto' }}>
+                <Editor style={{ height: '320px' }} />
+            </div>
+            
             <Footer />
 
         </>
