@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import  Editor  from "primereact/editor";    
 import { Editor } from 'primereact/editor';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.min.css';
@@ -14,6 +13,7 @@ import 'primeicons/primeicons.css';
 
 //     )
 // }
+
 export default function BasicDemo() {
     const [text, setText] = useState('');
 

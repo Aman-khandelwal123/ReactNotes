@@ -9,6 +9,9 @@ import Login from './Components/Auth/Login';
 import Header from './Components/Inc/Header';
 import Footer from './Components/Inc/Footer';
 import Editor from './Components/Pages/Editor';
+import Dashboard from './Components/Pages/Dashboard';
+import Modal from './Components/Pages/Modal';
+import Setting from './Components/Auth/Setting';
 
 function App() {
 
@@ -26,6 +29,9 @@ function App() {
           <Route exact path="/Notes" element={<Notes />} />
           <Route exact path="/Semester" element={<Semester />} />
           <Route exact path="/Editor" element={<Editor />} />
+          <Route exact path="/Dashboard" element={<Dashboard />} />
+          <Route exact path="/modal" element={<Modal />} />
+          <Route exact path="/setting" element={<Setting />} />
         </Routes>
       </BrowserRouter>
     </>

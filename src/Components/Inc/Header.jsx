@@ -41,6 +41,7 @@ const Header = () => {
                             placeholder='Select Notes'
                         />
                     </form>
+                    
                 </div>
             </nav>
         </>
