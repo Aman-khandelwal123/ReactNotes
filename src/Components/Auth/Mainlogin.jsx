@@ -25,7 +25,7 @@ const Mainlogin = () => {
     //         [e.target.name]: e.target.value
     //     });
     // }
-    
+
     const loginUser = (e) => {
         e.preventDefault();
         // toastifySuccess('solved'); 
@@ -39,7 +39,7 @@ const Mainlogin = () => {
         setPasswordShown(!passwordShown);
     };
 
-    
+
 
 
     // if (value) {
@@ -52,7 +52,7 @@ const Mainlogin = () => {
         // dispatch({ payload: true })
         const values = EncryptedList(JSON.stringify(loginUser));
         const val = { "Data": values }
-        // axios.post(companyUrl + '/CompanyLogin/GetData_CompanyLogin', val)
+            // axios.post(companyUrl + '/CompanyLogin/GetData_CompanyLogin', val)
             .then(function (response) {
                 const result = (response.data)
                 toastifySuccess('Login User')
@@ -65,12 +65,14 @@ const Mainlogin = () => {
                     window.location.reload();
                     // dispatch({ payload: false })
                 }, 1000);
-             
-            }) 
+
+            })
             .catch(function (error) {
                 toastifyError(error.response.data.Message)
             });
+            
     }
+
     return (
         <>
             <section className="background-radial-gradient" style={{ width: '100%' }}>
@@ -84,19 +86,20 @@ const Mainlogin = () => {
                            
                         </div> */}
 
-
+                        <h2>It is {new Date().toLocaleTimeString()}.</h2>
                         <div className="col-md-12 col-lg-12 mb-5 mb-lg-0 position-relative">
-                            <div id="radius-shape-1" className="position-absolute rounded-circle shadow-5-strong" />
+                            <div id="radius-shape-1"  className="position-absolute rounded-circle shadow-5-strong" />
                             <div id="radius-shape-2" className="position-absolute shadow-5-strong" />
                             <div className="card bg-glass mt-5" style={{ boxShadow: '1px 1px 10px 1px black', width: '380px' }}>
-                                <div className="text-center mt-2 name" style={{ marginBottom: '-20px' }}>
+                                {/* <button onClick={new Date()} >dsadsf</button> */}
+                                <div className="text-center mt-2 name"  style={{ marginBottom: '-20px' }}>
                                     Sign in to Continue
                                 </div>
                                 <div className="card-body  py-5 " >
-                                <form onSubmit={LoginSubmit}>
+                                    <form onSubmit={LoginSubmit}>
                                         <div className="form-outline mb-4">
                                             {/* <input type="email" id="form3Example3" className="form-control form-login" /> */}
-                                            <input type="text" className="form-control form-login" name="userName" placeholder='username'  onChange={(e) => setLoginDetails({ ...loginDetails, "LoginUserID": e.target.value })} />
+                                            <input type="text" className="form-control form-login" name="userName" placeholder='username' onChange={(e) => setLoginDetails({ ...loginDetails, "LoginUserID": e.target.value })} />
                                             {/* <label className="form-label pl-2 text-start" htmlFor="form3Example3">UserName</label> */}
                                         </div>
                                         <div className="form-outline mb-4">
