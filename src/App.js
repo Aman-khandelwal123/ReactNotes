@@ -5,13 +5,14 @@ import Home from './Components/Pages/Home';
 import Contact from './Components/Pages/Contact';
 import Notes from './Components/Pages/Notes';
 import Semester from './Components/Pages/Semester';
-import Login from './Components/Auth/Login';
 import Header from './Components/Inc/Header';
 import Footer from './Components/Inc/Footer';
 import Editor from './Components/Pages/Editor';
 import Dashboard from './Components/Pages/Dashboard';
 import Modal from './Components/Pages/Modal';
 import Setting from './Components/Auth/Setting';
+import LoginNew from './Components/Auth/LoginNew';
+import Mainlogin from './Components/Auth/Mainlogin';
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Login />} />
+          {/* <Route exact path="/" element={<Login />} /> */}
+          {/* <Route exact path="/" element={<LoginNew />} /> */}
           <Route exact path="/header" element={<Header />} />
           <Route exact path="/footer" element={<Footer />} />
           <Route exact path="/About" element={<About />} />
@@ -32,6 +34,7 @@ function App() {
           <Route exact path="/Dashboard" element={<Dashboard />} />
           <Route exact path="/modal" element={<Modal />} />
           <Route exact path="/setting" element={<Setting />} />
+          <Route exact path="/" element={<Mainlogin />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -955,3 +955,96 @@ background: #03a9f4;
   z-index: 999;
 } */
 
+/* todo for new login */
+/* .background-radial-gradient {
+ background-color: hsl(218, 41%, 15%);
+background-image: radial-gradient(650px circle at 0% 0%,
+hsl(218, 41%, 35%) 15%,
+hsl(218, 41%, 30%) 35%,
+hsl(218, 41%, 20%) 75%,
+hsl(218, 41%, 19%) 80%,
+transparent 100%),
+radial-gradient(1250px circle at 100% 100%,
+hsl(218, 41%, 45%) 15%,
+hsl(218, 41%, 30%) 35%,
+hsl(218, 41%, 20%) 75%,
+hsl(218, 41%, 19%) 80%,
+transparent 100%); 
+min-height: 100vh;
+ background-image: url('/src/Component/Pages/Login/img_new.jpg');
+background-size: cover;
+height: 100vh;
+background-position: center;
+background-color: hsla(0, 0%, 100%, 0.9) !important;
+backdrop-filter: saturate(200%) blur(25px); 
+} */
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+ background-image: radial-gradient(650px circle at 0% 0%,
+ hsl(218, 41%, 35%) 15%,
+ hsl(218, 41%, 30%) 35%,
+ hsl(218, 41%, 20%) 75%,
+ hsl(218, 41%, 19%) 80%,
+ transparent 100%),
+ radial-gradient(1250px circle at 100% 100%,
+ hsl(218, 41%, 45%) 15%,
+ hsl(218, 41%, 30%) 35%,
+ hsl(218, 41%, 20%) 75%,
+ hsl(218, 41%, 19%) 80%,
+ transparent 100%); 
+ min-height: 100vh;
+  /* background-image: url('/src/Component/Pages/Login/img_new.jpg');
+ background-size: cover;
+filter: saturate(1.5);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative; */
+ }
+ 
+
+#radius-shape-1 {
+  height: 220px;
+width: 220px;
+/* top: -60px;
+left: -130px; */
+top: -43x;
+left: -108px;
+background: radial-gradient(#44006b, #ad1fff);
+overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+bottom: -60px;
+right: -4px;
+width: 300px;
+height: 300px;
+background: radial-gradient(#44006b, #ad1fff);
+overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  /* background-color: hsl(0deg 0% 100% / 88%) !important; */
+backdrop-filter: saturate(200%) blur(25px);
+}
+.bg-glass:hover {
+  background-color: rgb(224, 220, 220) !important;
+  /* background-color: hsl(0deg 0% 100% / 88%) !important; */
+backdrop-filter: saturate(200%) blur(25px);
+box-shadow:1px 1px 10px 1px  gray !important;
+}
+.bg-glass .name{
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding-left: 10px;
+  color: brown;
+}
+.form-control.form-login{
+  border: 1px  dashed gray !important;
+}
+.form-control.form-login:focus{
+  border: 1px  solid #2684FF !important;
+}

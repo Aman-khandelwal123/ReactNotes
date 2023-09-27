@@ -23,11 +23,17 @@ const Login = () => {
     //         [e.target.name]: e.target.value
     //     });
     // }
-    const handleCatch = (e) =>{
+    const handleCatch = (e) => {
         setvalue({
             ...value,
-            [e.target.name]:e.target.value
+            [e.target.name]: e.target.value
         });
+    }
+    const handle = () => {
+        setvalue({
+            ...value,
+            [e.target.name]: e.target.value
+        })
     }
     const loginUser = (e) => {
         e.preventDefault();
@@ -41,13 +47,13 @@ const Login = () => {
     const togglePassword = () => {
         setPasswordShown(!passwordShown);
     };
-       
-    
+  
     // if (value) {
     //     toastifySuccess('Login Successfully');
     // } else {
     //     toastifyError('Invalid data')
     // }
+
     return (
         <>
             <div>

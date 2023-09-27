@@ -256,7 +256,7 @@ const Contact = () => {
                 />
             </div>
 
-            {/* <Divider orientation="left">Horizontal</Divider>
+             {/* <Divider orientation="left">Horizontal</Divider>
             <Row gutter={16}>
                 <Col className="gutter-row" span={6}>
                     <div style={style}>col-6</div>
@@ -312,7 +312,7 @@ const Contact = () => {
                 <Col className="gutter-row" span={6}>
                     <div style={style}>col-6</div>
                 </Col>
-            </Row> */}
+            </Row>  */}
 
 
             <Footer />
